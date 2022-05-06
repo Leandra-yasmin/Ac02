@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Listagem</title>
+    <style type="text/css">
+
+       table, tr,td, th{
+            border: 1px solid #999;
+            text-align: left;
+            width: 300px;
+        }
+        a{
+        margin-top: 10px;
+        padding-left: 20px;
+        text-decoration: none;  
+        }
+    </style>
+
+</head>
+<body>
+
+<h1>Lista de alunos</h1>
+
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>E-mail</th>
+        <th>Endereço</th>
+    </tr>
+    {% for item in dados %}
+        <tr>
+            <td>{{ item[0] }}</td>
+            <td>{{ item[1] }}</td>
+            <td>{{ item[2] }}</td>
+        </tr>
+    {% endfor %}
+</table>
+
+{{ dados[0].name }}
+
+<a href="/">Cadastrar</a>
+
+</body>
+</html>

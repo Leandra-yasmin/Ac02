@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Lista de alunos</title>
+    <style type="text/css">
+    html, body {
+        width: 100vw;
+        height: 100%;
+    }
+
+    *, button, input {
+        font-family: Arial, sans-serif;
+        border: 0;
+        background: 0;
+    }
+    form {
+    margin: 0 auto;
+    width: 300px;
+    height: 200px;
+    padding: 1px;
+    border: 1px solid #CCC;
+    border-radius: 5px ;
+    }
+    h1{
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+           
+        }
+        h1:after{
+            content: ' ';
+            display: block;
+            width: 100%;
+            height: 2px;
+            margin-top: 5px;
+            background: #353535;
+        }
+
+    label {
+        display: inline-block;
+        width: 70px;
+        text-align: right;
+    }
+    input{
+        margin-top:1px; 
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+    /* Para harmonizar o look & feel das bordas nos campos de texto*/
+    border: 1px solid #999;
+    }
+    .button{
+        
+        margin: 5px 80px;
+       
+    }
+    span input[type="submit"],a {
+        padding-left: 20px;
+        text-decoration: none;  
+    }
+       
+</style>
+</head>
+<body>
+
+    <form action="cadastrar" method="post">
+        <h1>Cadastro de aluno</h1>
+        <div class="login">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+ 
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco">
+      
+
+
+        <div class="button">
+        <input type="submit" id="submit" name="submit">
+        <a href="listar">Listar</a>
+        </div>
+        </div>
+      </form>
+</body>
+</html>
